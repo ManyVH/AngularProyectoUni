@@ -5,7 +5,7 @@
         <label for="name" >Nombre </label>
         <input type="text"  [(ngModel)]="nuevo.nombre" name="nombre" placeholder="Pokemon">
         <label for="hp">HP: </label>
-        <input type="text"  [(ngModel)]="nuevo.hp" name="vida"  >
+        <input type="number"  [(ngModel)]="nuevo.hp" name="vida"  >
         <span>
             <button (click)="agregar()">Agregar</button>
             <button (click)="quitar()">Limpiar Lista</button>
