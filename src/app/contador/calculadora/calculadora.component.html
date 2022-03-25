@@ -1,0 +1,36 @@
+<h1>Calculadora con Angular</h1>
+<hr>
+<div class="contenedor-principal">
+    <div class="calc">
+        <div class="pantalla">
+            <input class="valores" id="valores"  disabled value="{{valores}}">
+        </div>
+        <div class="numeros">
+            <div class="columnas">
+                <button class="boton" (click)="pasarNum('7')">7</button>
+                <button class="boton" (click)="pasarNum('8')">8</button>
+                <button class="boton" (click)="pasarNum('9')">9</button>
+                <button class="boton" (click)="pasarNum('+')">+</button>
+            </div>
+            <div class="columnas">
+                <button class="boton" (click)="pasarNum('4')">4</button>
+                <button class="boton" (click)="pasarNum('5')">5</button>
+                <button class="boton" (click)="pasarNum('6')">6</button>
+                <button class="boton" (click)="pasarNum('-')">-</button>
+            </div>
+            <div class="columnas">
+                <button class="boton" (click)="pasarNum('1')">1</button>
+                <button class="boton" (click)="pasarNum('2')">2</button>
+                <button class="boton" (click)="pasarNum('3')">3</button>
+                <button class="boton" (click)="pasarNum('*')">*</button>
+            </div>
+            <div class="columnas-f">
+                <button class="boton" (click)="reset()">Reset</button>
+                <button class="boton" (click)="pasarNum('/')">/</button>
+                <button class="boton" (click)="pasarNum('0')">0</button>
+                <button class="boton" (click)="pasarNum('.')">.</button>
+                <button class="boton" (click)="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<h1>{{titulo}}</h1>
+            <hr>
+            <span>
+            <h3>{{contador}}</h3>
+            <span>Base: {{base}}</span>
+            <input type="number" (keyup)="cambiarBase($event)">
+            
+            </span>
+            <br>
+            <span>
+            
+            <button (click)="aumentar(base)">+</button>
+           
+            <button (click)="restar(base)">-</button>
+            </span>

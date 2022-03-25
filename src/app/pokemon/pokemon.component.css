@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+  }
+
+  .col{
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  input:focus{
+    background-color: rgb(189, 255, 161);
+  }
