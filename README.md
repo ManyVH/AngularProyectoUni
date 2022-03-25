@@ -1,7 +1,7 @@
-#Angular Proyecto 1
+# Angular Proyecto 1
 
-###Componentes
+### Componentes
 
-*Pokemon
-*Contador
-*Calculadora
+* Pokemon
+* Contador
+* Calculadora
