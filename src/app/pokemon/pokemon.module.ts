@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { PokemonComponent } from './pokemon.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
+import { ListaComponent } from './Lista/lista.component';
+import { AgregarComponent } from './agregar/agregar.component';
+
 
 
 
@@ -10,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-      PokemonComponent,MainComponent
+      PokemonComponent,MainComponent, ListaComponent, AgregarComponent
 
   ],
   imports: [
@@ -18,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports:[
-    PokemonComponent,MainComponent
+    PokemonComponent,MainComponent, ListaComponent, AgregarComponent
   ]
 })
 export class PokemonModule { }

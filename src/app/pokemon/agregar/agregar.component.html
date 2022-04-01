@@ -1,0 +1,12 @@
+<div>
+    <form >
+        <label for="name" >Nombre </label>
+        <input type="text"  [(ngModel)]="nuevo.nombre" name="nombre" placeholder="Pokemon">
+        <label for="hp">HP: </label>
+        <input type="number"  [(ngModel)]="nuevo.hp" name="vida"  >
+        <span>
+            <button (click)="agregar()">Agregar</button>
+            <button (click)="quitar()">Quitar de la Lista</button>
+        </span>
+    </form>
+</div>

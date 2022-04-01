@@ -1,25 +1,14 @@
 <h1>App Pokémon</h1>
 <hr>
-<div>
-    <form >
-        <label for="name" >Nombre </label>
-        <input type="text"  [(ngModel)]="nuevo.nombre" name="nombre" placeholder="Pokemon">
-        <label for="hp">HP: </label>
-        <input type="number"  [(ngModel)]="nuevo.hp" name="vida"  >
-        <span>
-            <button (click)="agregar()">Agregar</button>
-            <button (click)="quitar()">Limpiar Lista</button>
-        </span>
-    </form>
-</div>
+
 <h2>Lista De Pokémon</h2>
+<app-agregar></app-agregar>
+
 <div class="row">
-    <div class="col">
-        <ul>
-            <li *ngFor="let pokemon of listaPokemon;">{{pokemon.nombre}} -- {{pokemon.hp}}</li>
-
-        </ul>
-
-    </div>
+    <app-lista></app-lista>
     
+</div>
+
+<div class="row">
+    <button (click)="mostrar()">Mostrar</button>
 </div>
